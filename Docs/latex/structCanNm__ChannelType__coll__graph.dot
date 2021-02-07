@@ -1,0 +1,17 @@
+digraph "CanNm_ChannelType"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="CanNm_ChannelType",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" PnEraRxNSduRef" ];
+  Node2 [label="PduInfoType",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structPduInfoType.html"];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" RxPdu" ];
+  Node3 [label="CanNm_RxPdu",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structCanNm__RxPdu.html"];
+  Node2 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" RxPduRef" ];
+  Node4 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" TxPdu" ];
+  Node4 [label="CanNm_TxPdu",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structCanNm__TxPdu.html"];
+  Node2 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" TxPduRef" ];
+  Node5 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" UserDataTxPdu" ];
+  Node5 [label="CanNm_UserDataTxPdu",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structCanNm__UserDataTxPdu.html"];
+  Node2 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" TxUserDataPduRef" ];
+}

@@ -1,0 +1,364 @@
+\hypertarget{CanNm_8h}{}\section{Can\+Nm.\+h File Reference}
+\label{CanNm_8h}\index{Can\+Nm.\+h@{Can\+Nm.\+h}}
+
+
+Can Network Management Module.  
+
+
+{\ttfamily \#include \char`\"{}Std\+\_\+\+Types.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Com\+Stack\+\_\+\+Types.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Nm\+Stack\+\_\+\+Types.\+h\char`\"{}}\\*
+Include dependency graph for Can\+Nm.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structCanNm__RxPdu}{Can\+Nm\+\_\+\+Rx\+Pdu}
+\item 
+struct \hyperlink{structCanNm__TxPdu}{Can\+Nm\+\_\+\+Tx\+Pdu}
+\item 
+struct \hyperlink{structCanNm__UserDataTxPdu}{Can\+Nm\+\_\+\+User\+Data\+Tx\+Pdu}
+\item 
+struct \hyperlink{structCanNm__PnFilterMaskByte}{Can\+Nm\+\_\+\+Pn\+Filter\+Mask\+Byte}
+\item 
+struct \hyperlink{structCanNm__ChannelType}{Can\+Nm\+\_\+\+Channel\+Type}
+\item 
+struct \hyperlink{structCanNm__PnInfo}{Can\+Nm\+\_\+\+Pn\+Info}
+\item 
+struct \hyperlink{structCanNm__ConfigType}{Can\+Nm\+\_\+\+Config\+Type}
+\begin{DoxyCompactList}\small\item\em \hyperlink{structCanNm__ConfigType}{Can\+Nm\+\_\+\+Config\+Type} \mbox{[}S\+W\+S\+\_\+\+Can\+Nm\+\_\+00447\mbox{]}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define {\bfseries C\+A\+N\+N\+M\+\_\+\+C\+H\+A\+N\+N\+E\+L\+\_\+\+C\+O\+U\+NT}~1\hypertarget{CanNm_8h_a6a61b9beeabd2ea29dfaf4f95c393b04}{}\label{CanNm_8h_a6a61b9beeabd2ea29dfaf4f95c393b04}
+
+\item 
+\#define {\bfseries C\+A\+N\+N\+M\+\_\+\+R\+X\+P\+D\+U\+\_\+\+M\+A\+X\+\_\+\+C\+O\+U\+NT}~128\hypertarget{CanNm_8h_a82ece064220b981b922f32f61d1e45b8}{}\label{CanNm_8h_a82ece064220b981b922f32f61d1e45b8}
+
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Can\+Nm\+\_\+\+Pdu\+Byte\+Position\+Type} \{ {\bfseries C\+A\+N\+N\+M\+\_\+\+P\+D\+U\+\_\+\+B\+Y\+T\+E\+\_\+0} = 0x00, 
+{\bfseries C\+A\+N\+N\+M\+\_\+\+P\+D\+U\+\_\+\+B\+Y\+T\+E\+\_\+1} = 0x01, 
+{\bfseries C\+A\+N\+N\+M\+\_\+\+P\+D\+U\+\_\+\+O\+FF} = 0x\+FF
+ \}\hypertarget{CanNm_8h_a846aa2e26db63173b8f1faab16999b61}{}\label{CanNm_8h_a846aa2e26db63173b8f1faab16999b61}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{CanNm_8h_a04714af29a337890bec06f9646f39f37}{Can\+Nm\+\_\+\+Init} (const \hyperlink{structCanNm__ConfigType}{Can\+Nm\+\_\+\+Config\+Type} $\ast$cannm\+Config\+Ptr)
+\begin{DoxyCompactList}\small\item\em Can\+Nm\+\_\+\+Init \mbox{[}S\+W\+S\+\_\+\+Can\+Nm\+\_\+00208\mbox{]}. \end{DoxyCompactList}\item 
+void \hyperlink{CanNm_8h_ac868aa52c6b77f399b97942e5c1308e6}{Can\+Nm\+\_\+\+De\+Init} (void)
+\begin{DoxyCompactList}\small\item\em Can\+Nm\+\_\+\+De\+Init \mbox{[}S\+W\+S\+\_\+\+Can\+Nm\+\_\+91002\mbox{]}. \end{DoxyCompactList}\item 
+Std\+\_\+\+Return\+Type \hyperlink{CanNm_8h_a2084933590af6ce787e827491a633450}{Can\+Nm\+\_\+\+Passive\+Start\+Up} (Network\+Handle\+Type nm\+Channel\+Handle)
+\begin{DoxyCompactList}\small\item\em Can\+Nm\+\_\+\+Passive\+Start\+Up \mbox{[}S\+W\+S\+\_\+\+Can\+Nm\+\_\+00211\mbox{]}. \end{DoxyCompactList}\item 
+Std\+\_\+\+Return\+Type \hyperlink{CanNm_8h_a2a688516a4c12cf0c5b82c989131ae01}{Can\+Nm\+\_\+\+Network\+Request} (Network\+Handle\+Type nm\+Channel\+Handle)
+\begin{DoxyCompactList}\small\item\em Can\+Nm\+\_\+\+Network\+Request \mbox{[}S\+W\+S\+\_\+\+Can\+Nm\+\_\+00213\mbox{]}. \end{DoxyCompactList}\item 
+Std\+\_\+\+Return\+Type \hyperlink{CanNm_8h_a36f525a12597cb14ae031f892279f510}{Can\+Nm\+\_\+\+Network\+Release} (Network\+Handle\+Type nm\+Channel\+Handle)
+\begin{DoxyCompactList}\small\item\em Can\+Nm\+\_\+\+Network\+Release \mbox{[}S\+W\+S\+\_\+\+Can\+Nm\+\_\+00214\mbox{]}. \end{DoxyCompactList}\item 
+Std\+\_\+\+Return\+Type \hyperlink{CanNm_8h_a08fb6a3623a8ffe78a412b1caa8bd707}{Can\+Nm\+\_\+\+Disable\+Communication} (Network\+Handle\+Type nm\+Channel\+Handle)
+\begin{DoxyCompactList}\small\item\em Can\+Nm\+\_\+\+Disable\+Communication \mbox{[}S\+W\+S\+\_\+\+Can\+Nm\+\_\+00215\mbox{]}. \end{DoxyCompactList}\item 
+Std\+\_\+\+Return\+Type \hyperlink{CanNm_8h_a8c156386e9c7336e9e06fe180b2e3d8f}{Can\+Nm\+\_\+\+Enable\+Communication} (Network\+Handle\+Type nm\+Channel\+Handle)
+\begin{DoxyCompactList}\small\item\em Can\+Nm\+\_\+\+Enable\+Communication \mbox{[}S\+W\+S\+\_\+\+Can\+Nm\+\_\+00216\mbox{]}. \end{DoxyCompactList}\item 
+Std\+\_\+\+Return\+Type \hyperlink{CanNm_8h_a14ac586f4f85f3d7db28d0fa9213f1a5}{Can\+Nm\+\_\+\+Set\+User\+Data} (Network\+Handle\+Type nm\+Channel\+Handle, const uint8 $\ast$nm\+User\+Data\+Ptr)
+\begin{DoxyCompactList}\small\item\em Can\+Nm\+\_\+\+Set\+User\+Data \mbox{[}S\+W\+S\+\_\+\+Can\+Nm\+\_\+00217\mbox{]}. \end{DoxyCompactList}\item 
+Std\+\_\+\+Return\+Type \hyperlink{CanNm_8h_a467323deb9c2098e2062d8370e26ab0f}{Can\+Nm\+\_\+\+Get\+User\+Data} (Network\+Handle\+Type nm\+Channel\+Handle, uint8 $\ast$nm\+User\+Data\+Ptr)
+\begin{DoxyCompactList}\small\item\em Can\+Nm\+\_\+\+Get\+User\+Data \mbox{[}S\+W\+S\+\_\+\+Can\+Nm\+\_\+00218\mbox{]}. \end{DoxyCompactList}\item 
+Std\+\_\+\+Return\+Type \hyperlink{CanNm_8h_a274c3732a0a67a3d0753f02823a4a708}{Can\+Nm\+\_\+\+Transmit} (Pdu\+Id\+Type Tx\+Pdu\+Id, const \hyperlink{structPduInfoType}{Pdu\+Info\+Type} $\ast$Pdu\+Info\+Ptr)
+\begin{DoxyCompactList}\small\item\em Can\+Nm\+\_\+\+Transmit \mbox{[}S\+W\+S\+\_\+\+Can\+Nm\+\_\+00331\mbox{]}. \end{DoxyCompactList}\item 
+Std\+\_\+\+Return\+Type \hyperlink{CanNm_8h_a182b3d0a1afc70e57fe207a8eede7799}{Can\+Nm\+\_\+\+Get\+Node\+Identifier} (Network\+Handle\+Type nm\+Channel\+Handle, uint8 $\ast$nm\+Node\+Id\+Ptr)
+\begin{DoxyCompactList}\small\item\em Can\+Nm\+\_\+\+Get\+Node\+Identifier \mbox{[}S\+W\+S\+\_\+\+Can\+Nm\+\_\+00219\mbox{]}. \end{DoxyCompactList}\item 
+Std\+\_\+\+Return\+Type \hyperlink{CanNm_8h_a109806d38aeab64ddaf501e5374a5eae}{Can\+Nm\+\_\+\+Get\+Local\+Node\+Identifier} (Network\+Handle\+Type nm\+Channel\+Handle, uint8 $\ast$nm\+Node\+Id\+Ptr)
+\begin{DoxyCompactList}\small\item\em Can\+Nm\+\_\+\+Get\+Node\+Identifier \mbox{[}S\+W\+S\+\_\+\+Can\+Nm\+\_\+00220\mbox{]}. \end{DoxyCompactList}\item 
+Std\+\_\+\+Return\+Type \hyperlink{CanNm_8h_a332dd2231cfbbcaec0241efd4df3177b}{Can\+Nm\+\_\+\+Repeat\+Message\+Request} (Network\+Handle\+Type nm\+Channel\+Handle)
+\begin{DoxyCompactList}\small\item\em Can\+Nm\+\_\+\+Repeat\+Message\+Request \mbox{[}S\+W\+S\+\_\+\+Can\+Nm\+\_\+00221\mbox{]}. \end{DoxyCompactList}\item 
+Std\+\_\+\+Return\+Type \hyperlink{CanNm_8h_a610043486238960f7e2726f4a014567e}{Can\+Nm\+\_\+\+Get\+Pdu\+Data} (Network\+Handle\+Type nm\+Channel\+Handle, uint8 $\ast$nm\+Pdu\+Data\+Ptr)
+\begin{DoxyCompactList}\small\item\em Can\+Nm\+\_\+\+Get\+Pdu\+Data \mbox{[}S\+W\+S\+\_\+\+Can\+Nm\+\_\+00222\mbox{]}. \end{DoxyCompactList}\item 
+Std\+\_\+\+Return\+Type \hyperlink{CanNm_8h_a8bb374b481a4ba99ceabf6dbbec8e000}{Can\+Nm\+\_\+\+Get\+State} (Network\+Handle\+Type nm\+Channel\+Handle, Nm\+\_\+\+State\+Type $\ast$nm\+State\+Ptr, Nm\+\_\+\+Mode\+Type $\ast$nm\+Mode\+Ptr)
+\begin{DoxyCompactList}\small\item\em Can\+Nm\+\_\+\+Get\+State \mbox{[}S\+W\+S\+\_\+\+Can\+Nm\+\_\+00223\mbox{]}. \end{DoxyCompactList}\item 
+void \hyperlink{CanNm_8h_aa70d98b8c368e0f37b97edb6cc06d1a5}{Can\+Nm\+\_\+\+Get\+Version\+Info} (\hyperlink{structStd__VersionInfoType}{Std\+\_\+\+Version\+Info\+Type} $\ast$versioninfo)
+\begin{DoxyCompactList}\small\item\em Can\+Nm\+\_\+\+Get\+Version\+Info \mbox{[}S\+W\+S\+\_\+\+Can\+Nm\+\_\+00224\mbox{]}. \end{DoxyCompactList}\item 
+Std\+\_\+\+Return\+Type \hyperlink{CanNm_8h_a9841c84a86fb279928317c760fa9edf9}{Can\+Nm\+\_\+\+Request\+Bus\+Synchronization} (Network\+Handle\+Type nm\+Channel\+Handle)
+\begin{DoxyCompactList}\small\item\em Can\+Nm\+\_\+\+Request\+Bus\+Synchronization \mbox{[}S\+W\+S\+\_\+\+Can\+Nm\+\_\+00226\mbox{]}. \end{DoxyCompactList}\item 
+Std\+\_\+\+Return\+Type {\bfseries Can\+Nm\+\_\+\+Check\+Remote\+Sleep\+Indication} (Network\+Handle\+Type nm\+Channel\+Handle, boolean $\ast$nm\+Remote\+Sleep\+Ind\+Ptr)\hypertarget{CanNm_8h_a61482aa71d846d02bc852d7deebcc311}{}\label{CanNm_8h_a61482aa71d846d02bc852d7deebcc311}
+
+\item 
+Std\+\_\+\+Return\+Type \hyperlink{CanNm_8h_a194190fadf3bc08ed965009828718c1f}{Can\+Nm\+\_\+\+Set\+Sleep\+Ready\+Bit} (Network\+Handle\+Type nm\+Channel\+Handle, boolean nm\+Sleep\+Ready\+Bit)
+\begin{DoxyCompactList}\small\item\em Can\+Nm\+\_\+\+Set\+Sleep\+Ready\+Bit \mbox{[}S\+W\+S\+\_\+\+Can\+Nm\+\_\+00338\mbox{]}. \end{DoxyCompactList}\item 
+void \hyperlink{CanNm_8h_a439cb8980084c673243db8059bfa67a4}{Can\+Nm\+\_\+\+Tx\+Confirmation} (Pdu\+Id\+Type Tx\+Pdu\+Id, Std\+\_\+\+Return\+Type result)
+\begin{DoxyCompactList}\small\item\em Can\+Nm\+\_\+\+Tx\+Confirmation \mbox{[}S\+W\+S\+\_\+\+Can\+Nm\+\_\+00228\mbox{]}. \end{DoxyCompactList}\item 
+void \hyperlink{CanNm_8h_aea88ee089c65e433a8dcf84eef3a965b}{Can\+Nm\+\_\+\+Rx\+Indication} (Pdu\+Id\+Type Rx\+Pdu\+Id, const \hyperlink{structPduInfoType}{Pdu\+Info\+Type} $\ast$Pdu\+Info\+Ptr)
+\begin{DoxyCompactList}\small\item\em Can\+Nm\+\_\+\+Tx\+Confirmation \mbox{[}S\+W\+S\+\_\+\+Can\+Nm\+\_\+00231\mbox{]}. \end{DoxyCompactList}\item 
+void \hyperlink{CanNm_8h_a51184338e587edcbfe836e86cdc4bf1f}{Can\+Nm\+\_\+\+Confirm\+Pn\+Availability} (Network\+Handle\+Type nm\+Channel\+Handle)
+\begin{DoxyCompactList}\small\item\em Can\+Nm\+\_\+\+Confirm\+Pn\+Availability \mbox{[}S\+W\+S\+\_\+\+Can\+Nm\+\_\+00344\mbox{]}. \end{DoxyCompactList}\item 
+Std\+\_\+\+Return\+Type \hyperlink{CanNm_8h_aa085375aa3a41d5fe250e5e90b31c021}{Can\+Nm\+\_\+\+Trigger\+Transmit} (Pdu\+Id\+Type Tx\+Pdu\+Id, \hyperlink{structPduInfoType}{Pdu\+Info\+Type} $\ast$Pdu\+Info\+Ptr)
+\begin{DoxyCompactList}\small\item\em Can\+Nm\+\_\+\+Trigger\+Transmit \mbox{[}S\+W\+S\+\_\+\+Can\+Nm\+\_\+91001\mbox{]}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Can Network Management Module. 
+
+===================================================================================================================$\ast$\textbackslash{}
+
+Implementation of Can Network Managment Module $\ast$==================================================================================================================== 
+
+\subsection{Function Documentation}
+\index{Can\+Nm.\+h@{Can\+Nm.\+h}!Can\+Nm\+\_\+\+Confirm\+Pn\+Availability@{Can\+Nm\+\_\+\+Confirm\+Pn\+Availability}}
+\index{Can\+Nm\+\_\+\+Confirm\+Pn\+Availability@{Can\+Nm\+\_\+\+Confirm\+Pn\+Availability}!Can\+Nm.\+h@{Can\+Nm.\+h}}
+\subsubsection[{\texorpdfstring{Can\+Nm\+\_\+\+Confirm\+Pn\+Availability(\+Network\+Handle\+Type nm\+Channel\+Handle)}{CanNm_ConfirmPnAvailability(NetworkHandleType nmChannelHandle)}}]{\setlength{\rightskip}{0pt plus 5cm}void Can\+Nm\+\_\+\+Confirm\+Pn\+Availability (
+\begin{DoxyParamCaption}
+\item[{Network\+Handle\+Type}]{nm\+Channel\+Handle}
+\end{DoxyParamCaption}
+)}\hypertarget{CanNm_8h_a51184338e587edcbfe836e86cdc4bf1f}{}\label{CanNm_8h_a51184338e587edcbfe836e86cdc4bf1f}
+
+
+Can\+Nm\+\_\+\+Confirm\+Pn\+Availability \mbox{[}S\+W\+S\+\_\+\+Can\+Nm\+\_\+00344\mbox{]}. 
+
+Enables the PN filter functionality on the indicated NM channel. Availability\+: The A\+PI is only available if Can\+Nm\+Global\+Pn\+Support is T\+R\+UE. \index{Can\+Nm.\+h@{Can\+Nm.\+h}!Can\+Nm\+\_\+\+De\+Init@{Can\+Nm\+\_\+\+De\+Init}}
+\index{Can\+Nm\+\_\+\+De\+Init@{Can\+Nm\+\_\+\+De\+Init}!Can\+Nm.\+h@{Can\+Nm.\+h}}
+\subsubsection[{\texorpdfstring{Can\+Nm\+\_\+\+De\+Init(void)}{CanNm_DeInit(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void Can\+Nm\+\_\+\+De\+Init (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{CanNm_8h_ac868aa52c6b77f399b97942e5c1308e6}{}\label{CanNm_8h_ac868aa52c6b77f399b97942e5c1308e6}
+
+
+Can\+Nm\+\_\+\+De\+Init \mbox{[}S\+W\+S\+\_\+\+Can\+Nm\+\_\+91002\mbox{]}. 
+
+De-\/initializes the Can\+Nm module. \index{Can\+Nm.\+h@{Can\+Nm.\+h}!Can\+Nm\+\_\+\+Disable\+Communication@{Can\+Nm\+\_\+\+Disable\+Communication}}
+\index{Can\+Nm\+\_\+\+Disable\+Communication@{Can\+Nm\+\_\+\+Disable\+Communication}!Can\+Nm.\+h@{Can\+Nm.\+h}}
+\subsubsection[{\texorpdfstring{Can\+Nm\+\_\+\+Disable\+Communication(\+Network\+Handle\+Type nm\+Channel\+Handle)}{CanNm_DisableCommunication(NetworkHandleType nmChannelHandle)}}]{\setlength{\rightskip}{0pt plus 5cm}Std\+\_\+\+Return\+Type Can\+Nm\+\_\+\+Disable\+Communication (
+\begin{DoxyParamCaption}
+\item[{Network\+Handle\+Type}]{nm\+Channel\+Handle}
+\end{DoxyParamCaption}
+)}\hypertarget{CanNm_8h_a08fb6a3623a8ffe78a412b1caa8bd707}{}\label{CanNm_8h_a08fb6a3623a8ffe78a412b1caa8bd707}
+
+
+Can\+Nm\+\_\+\+Disable\+Communication \mbox{[}S\+W\+S\+\_\+\+Can\+Nm\+\_\+00215\mbox{]}. 
+
+Disable the NM P\+DU transmission ability due to a I\+S\+O14229 Communication Control (28hex) service. \index{Can\+Nm.\+h@{Can\+Nm.\+h}!Can\+Nm\+\_\+\+Enable\+Communication@{Can\+Nm\+\_\+\+Enable\+Communication}}
+\index{Can\+Nm\+\_\+\+Enable\+Communication@{Can\+Nm\+\_\+\+Enable\+Communication}!Can\+Nm.\+h@{Can\+Nm.\+h}}
+\subsubsection[{\texorpdfstring{Can\+Nm\+\_\+\+Enable\+Communication(\+Network\+Handle\+Type nm\+Channel\+Handle)}{CanNm_EnableCommunication(NetworkHandleType nmChannelHandle)}}]{\setlength{\rightskip}{0pt plus 5cm}Std\+\_\+\+Return\+Type Can\+Nm\+\_\+\+Enable\+Communication (
+\begin{DoxyParamCaption}
+\item[{Network\+Handle\+Type}]{nm\+Channel\+Handle}
+\end{DoxyParamCaption}
+)}\hypertarget{CanNm_8h_a8c156386e9c7336e9e06fe180b2e3d8f}{}\label{CanNm_8h_a8c156386e9c7336e9e06fe180b2e3d8f}
+
+
+Can\+Nm\+\_\+\+Enable\+Communication \mbox{[}S\+W\+S\+\_\+\+Can\+Nm\+\_\+00216\mbox{]}. 
+
+Enable the NM P\+DU transmission ability due to a I\+S\+O14229 Communication Control (28hex) service. \index{Can\+Nm.\+h@{Can\+Nm.\+h}!Can\+Nm\+\_\+\+Get\+Local\+Node\+Identifier@{Can\+Nm\+\_\+\+Get\+Local\+Node\+Identifier}}
+\index{Can\+Nm\+\_\+\+Get\+Local\+Node\+Identifier@{Can\+Nm\+\_\+\+Get\+Local\+Node\+Identifier}!Can\+Nm.\+h@{Can\+Nm.\+h}}
+\subsubsection[{\texorpdfstring{Can\+Nm\+\_\+\+Get\+Local\+Node\+Identifier(\+Network\+Handle\+Type nm\+Channel\+Handle, uint8 $\ast$nm\+Node\+Id\+Ptr)}{CanNm_GetLocalNodeIdentifier(NetworkHandleType nmChannelHandle, uint8 *nmNodeIdPtr)}}]{\setlength{\rightskip}{0pt plus 5cm}Std\+\_\+\+Return\+Type Can\+Nm\+\_\+\+Get\+Local\+Node\+Identifier (
+\begin{DoxyParamCaption}
+\item[{Network\+Handle\+Type}]{nm\+Channel\+Handle, }
+\item[{uint8 $\ast$}]{nm\+Node\+Id\+Ptr}
+\end{DoxyParamCaption}
+)}\hypertarget{CanNm_8h_a109806d38aeab64ddaf501e5374a5eae}{}\label{CanNm_8h_a109806d38aeab64ddaf501e5374a5eae}
+
+
+Can\+Nm\+\_\+\+Get\+Node\+Identifier \mbox{[}S\+W\+S\+\_\+\+Can\+Nm\+\_\+00220\mbox{]}. 
+
+Get node identifier configured for the local node. \index{Can\+Nm.\+h@{Can\+Nm.\+h}!Can\+Nm\+\_\+\+Get\+Node\+Identifier@{Can\+Nm\+\_\+\+Get\+Node\+Identifier}}
+\index{Can\+Nm\+\_\+\+Get\+Node\+Identifier@{Can\+Nm\+\_\+\+Get\+Node\+Identifier}!Can\+Nm.\+h@{Can\+Nm.\+h}}
+\subsubsection[{\texorpdfstring{Can\+Nm\+\_\+\+Get\+Node\+Identifier(\+Network\+Handle\+Type nm\+Channel\+Handle, uint8 $\ast$nm\+Node\+Id\+Ptr)}{CanNm_GetNodeIdentifier(NetworkHandleType nmChannelHandle, uint8 *nmNodeIdPtr)}}]{\setlength{\rightskip}{0pt plus 5cm}Std\+\_\+\+Return\+Type Can\+Nm\+\_\+\+Get\+Node\+Identifier (
+\begin{DoxyParamCaption}
+\item[{Network\+Handle\+Type}]{nm\+Channel\+Handle, }
+\item[{uint8 $\ast$}]{nm\+Node\+Id\+Ptr}
+\end{DoxyParamCaption}
+)}\hypertarget{CanNm_8h_a182b3d0a1afc70e57fe207a8eede7799}{}\label{CanNm_8h_a182b3d0a1afc70e57fe207a8eede7799}
+
+
+Can\+Nm\+\_\+\+Get\+Node\+Identifier \mbox{[}S\+W\+S\+\_\+\+Can\+Nm\+\_\+00219\mbox{]}. 
+
+Get node identifier out of the most recently received NM P\+DU. \index{Can\+Nm.\+h@{Can\+Nm.\+h}!Can\+Nm\+\_\+\+Get\+Pdu\+Data@{Can\+Nm\+\_\+\+Get\+Pdu\+Data}}
+\index{Can\+Nm\+\_\+\+Get\+Pdu\+Data@{Can\+Nm\+\_\+\+Get\+Pdu\+Data}!Can\+Nm.\+h@{Can\+Nm.\+h}}
+\subsubsection[{\texorpdfstring{Can\+Nm\+\_\+\+Get\+Pdu\+Data(\+Network\+Handle\+Type nm\+Channel\+Handle, uint8 $\ast$nm\+Pdu\+Data\+Ptr)}{CanNm_GetPduData(NetworkHandleType nmChannelHandle, uint8 *nmPduDataPtr)}}]{\setlength{\rightskip}{0pt plus 5cm}Std\+\_\+\+Return\+Type Can\+Nm\+\_\+\+Get\+Pdu\+Data (
+\begin{DoxyParamCaption}
+\item[{Network\+Handle\+Type}]{nm\+Channel\+Handle, }
+\item[{uint8 $\ast$}]{nm\+Pdu\+Data\+Ptr}
+\end{DoxyParamCaption}
+)}\hypertarget{CanNm_8h_a610043486238960f7e2726f4a014567e}{}\label{CanNm_8h_a610043486238960f7e2726f4a014567e}
+
+
+Can\+Nm\+\_\+\+Get\+Pdu\+Data \mbox{[}S\+W\+S\+\_\+\+Can\+Nm\+\_\+00222\mbox{]}. 
+
+Get the whole P\+DU data out of the most recently received NM P\+DU. \index{Can\+Nm.\+h@{Can\+Nm.\+h}!Can\+Nm\+\_\+\+Get\+State@{Can\+Nm\+\_\+\+Get\+State}}
+\index{Can\+Nm\+\_\+\+Get\+State@{Can\+Nm\+\_\+\+Get\+State}!Can\+Nm.\+h@{Can\+Nm.\+h}}
+\subsubsection[{\texorpdfstring{Can\+Nm\+\_\+\+Get\+State(\+Network\+Handle\+Type nm\+Channel\+Handle, Nm\+\_\+\+State\+Type $\ast$nm\+State\+Ptr, Nm\+\_\+\+Mode\+Type $\ast$nm\+Mode\+Ptr)}{CanNm_GetState(NetworkHandleType nmChannelHandle, Nm_StateType *nmStatePtr, Nm_ModeType *nmModePtr)}}]{\setlength{\rightskip}{0pt plus 5cm}Std\+\_\+\+Return\+Type Can\+Nm\+\_\+\+Get\+State (
+\begin{DoxyParamCaption}
+\item[{Network\+Handle\+Type}]{nm\+Channel\+Handle, }
+\item[{Nm\+\_\+\+State\+Type $\ast$}]{nm\+State\+Ptr, }
+\item[{Nm\+\_\+\+Mode\+Type $\ast$}]{nm\+Mode\+Ptr}
+\end{DoxyParamCaption}
+)}\hypertarget{CanNm_8h_a8bb374b481a4ba99ceabf6dbbec8e000}{}\label{CanNm_8h_a8bb374b481a4ba99ceabf6dbbec8e000}
+
+
+Can\+Nm\+\_\+\+Get\+State \mbox{[}S\+W\+S\+\_\+\+Can\+Nm\+\_\+00223\mbox{]}. 
+
+Returns the state and the mode of the network management. \index{Can\+Nm.\+h@{Can\+Nm.\+h}!Can\+Nm\+\_\+\+Get\+User\+Data@{Can\+Nm\+\_\+\+Get\+User\+Data}}
+\index{Can\+Nm\+\_\+\+Get\+User\+Data@{Can\+Nm\+\_\+\+Get\+User\+Data}!Can\+Nm.\+h@{Can\+Nm.\+h}}
+\subsubsection[{\texorpdfstring{Can\+Nm\+\_\+\+Get\+User\+Data(\+Network\+Handle\+Type nm\+Channel\+Handle, uint8 $\ast$nm\+User\+Data\+Ptr)}{CanNm_GetUserData(NetworkHandleType nmChannelHandle, uint8 *nmUserDataPtr)}}]{\setlength{\rightskip}{0pt plus 5cm}Std\+\_\+\+Return\+Type Can\+Nm\+\_\+\+Get\+User\+Data (
+\begin{DoxyParamCaption}
+\item[{Network\+Handle\+Type}]{nm\+Channel\+Handle, }
+\item[{uint8 $\ast$}]{nm\+User\+Data\+Ptr}
+\end{DoxyParamCaption}
+)}\hypertarget{CanNm_8h_a467323deb9c2098e2062d8370e26ab0f}{}\label{CanNm_8h_a467323deb9c2098e2062d8370e26ab0f}
+
+
+Can\+Nm\+\_\+\+Get\+User\+Data \mbox{[}S\+W\+S\+\_\+\+Can\+Nm\+\_\+00218\mbox{]}. 
+
+Get user data out of the most recently received NM P\+DU. \index{Can\+Nm.\+h@{Can\+Nm.\+h}!Can\+Nm\+\_\+\+Get\+Version\+Info@{Can\+Nm\+\_\+\+Get\+Version\+Info}}
+\index{Can\+Nm\+\_\+\+Get\+Version\+Info@{Can\+Nm\+\_\+\+Get\+Version\+Info}!Can\+Nm.\+h@{Can\+Nm.\+h}}
+\subsubsection[{\texorpdfstring{Can\+Nm\+\_\+\+Get\+Version\+Info(\+Std\+\_\+\+Version\+Info\+Type $\ast$versioninfo)}{CanNm_GetVersionInfo(Std_VersionInfoType *versioninfo)}}]{\setlength{\rightskip}{0pt plus 5cm}void Can\+Nm\+\_\+\+Get\+Version\+Info (
+\begin{DoxyParamCaption}
+\item[{{\bf Std\+\_\+\+Version\+Info\+Type} $\ast$}]{versioninfo}
+\end{DoxyParamCaption}
+)}\hypertarget{CanNm_8h_aa70d98b8c368e0f37b97edb6cc06d1a5}{}\label{CanNm_8h_aa70d98b8c368e0f37b97edb6cc06d1a5}
+
+
+Can\+Nm\+\_\+\+Get\+Version\+Info \mbox{[}S\+W\+S\+\_\+\+Can\+Nm\+\_\+00224\mbox{]}. 
+
+This service returns the version information of this module. \index{Can\+Nm.\+h@{Can\+Nm.\+h}!Can\+Nm\+\_\+\+Init@{Can\+Nm\+\_\+\+Init}}
+\index{Can\+Nm\+\_\+\+Init@{Can\+Nm\+\_\+\+Init}!Can\+Nm.\+h@{Can\+Nm.\+h}}
+\subsubsection[{\texorpdfstring{Can\+Nm\+\_\+\+Init(const Can\+Nm\+\_\+\+Config\+Type $\ast$cannm\+Config\+Ptr)}{CanNm_Init(const CanNm_ConfigType *cannmConfigPtr)}}]{\setlength{\rightskip}{0pt plus 5cm}void Can\+Nm\+\_\+\+Init (
+\begin{DoxyParamCaption}
+\item[{const {\bf Can\+Nm\+\_\+\+Config\+Type} $\ast$}]{cannm\+Config\+Ptr}
+\end{DoxyParamCaption}
+)}\hypertarget{CanNm_8h_a04714af29a337890bec06f9646f39f37}{}\label{CanNm_8h_a04714af29a337890bec06f9646f39f37}
+
+
+Can\+Nm\+\_\+\+Init \mbox{[}S\+W\+S\+\_\+\+Can\+Nm\+\_\+00208\mbox{]}. 
+
+Initialize the Can\+Nm module. \index{Can\+Nm.\+h@{Can\+Nm.\+h}!Can\+Nm\+\_\+\+Network\+Release@{Can\+Nm\+\_\+\+Network\+Release}}
+\index{Can\+Nm\+\_\+\+Network\+Release@{Can\+Nm\+\_\+\+Network\+Release}!Can\+Nm.\+h@{Can\+Nm.\+h}}
+\subsubsection[{\texorpdfstring{Can\+Nm\+\_\+\+Network\+Release(\+Network\+Handle\+Type nm\+Channel\+Handle)}{CanNm_NetworkRelease(NetworkHandleType nmChannelHandle)}}]{\setlength{\rightskip}{0pt plus 5cm}Std\+\_\+\+Return\+Type Can\+Nm\+\_\+\+Network\+Release (
+\begin{DoxyParamCaption}
+\item[{Network\+Handle\+Type}]{nm\+Channel\+Handle}
+\end{DoxyParamCaption}
+)}\hypertarget{CanNm_8h_a36f525a12597cb14ae031f892279f510}{}\label{CanNm_8h_a36f525a12597cb14ae031f892279f510}
+
+
+Can\+Nm\+\_\+\+Network\+Release \mbox{[}S\+W\+S\+\_\+\+Can\+Nm\+\_\+00214\mbox{]}. 
+
+Release the network, since E\+CU doesn\textquotesingle{}t have to communicate on the bus. \index{Can\+Nm.\+h@{Can\+Nm.\+h}!Can\+Nm\+\_\+\+Network\+Request@{Can\+Nm\+\_\+\+Network\+Request}}
+\index{Can\+Nm\+\_\+\+Network\+Request@{Can\+Nm\+\_\+\+Network\+Request}!Can\+Nm.\+h@{Can\+Nm.\+h}}
+\subsubsection[{\texorpdfstring{Can\+Nm\+\_\+\+Network\+Request(\+Network\+Handle\+Type nm\+Channel\+Handle)}{CanNm_NetworkRequest(NetworkHandleType nmChannelHandle)}}]{\setlength{\rightskip}{0pt plus 5cm}Std\+\_\+\+Return\+Type Can\+Nm\+\_\+\+Network\+Request (
+\begin{DoxyParamCaption}
+\item[{Network\+Handle\+Type}]{nm\+Channel\+Handle}
+\end{DoxyParamCaption}
+)}\hypertarget{CanNm_8h_a2a688516a4c12cf0c5b82c989131ae01}{}\label{CanNm_8h_a2a688516a4c12cf0c5b82c989131ae01}
+
+
+Can\+Nm\+\_\+\+Network\+Request \mbox{[}S\+W\+S\+\_\+\+Can\+Nm\+\_\+00213\mbox{]}. 
+
+Request the network, since E\+CU needs to communicate on the bus. \index{Can\+Nm.\+h@{Can\+Nm.\+h}!Can\+Nm\+\_\+\+Passive\+Start\+Up@{Can\+Nm\+\_\+\+Passive\+Start\+Up}}
+\index{Can\+Nm\+\_\+\+Passive\+Start\+Up@{Can\+Nm\+\_\+\+Passive\+Start\+Up}!Can\+Nm.\+h@{Can\+Nm.\+h}}
+\subsubsection[{\texorpdfstring{Can\+Nm\+\_\+\+Passive\+Start\+Up(\+Network\+Handle\+Type nm\+Channel\+Handle)}{CanNm_PassiveStartUp(NetworkHandleType nmChannelHandle)}}]{\setlength{\rightskip}{0pt plus 5cm}Std\+\_\+\+Return\+Type Can\+Nm\+\_\+\+Passive\+Start\+Up (
+\begin{DoxyParamCaption}
+\item[{Network\+Handle\+Type}]{nm\+Channel\+Handle}
+\end{DoxyParamCaption}
+)}\hypertarget{CanNm_8h_a2084933590af6ce787e827491a633450}{}\label{CanNm_8h_a2084933590af6ce787e827491a633450}
+
+
+Can\+Nm\+\_\+\+Passive\+Start\+Up \mbox{[}S\+W\+S\+\_\+\+Can\+Nm\+\_\+00211\mbox{]}. 
+
+Passive startup of the A\+U\+T\+O\+S\+AR C\+AN NM. It triggers the transition from Bus-\/\+Sleep Mode or Prepare Bus Sleep Mode to the Network Mode in Repeat Message State. \index{Can\+Nm.\+h@{Can\+Nm.\+h}!Can\+Nm\+\_\+\+Repeat\+Message\+Request@{Can\+Nm\+\_\+\+Repeat\+Message\+Request}}
+\index{Can\+Nm\+\_\+\+Repeat\+Message\+Request@{Can\+Nm\+\_\+\+Repeat\+Message\+Request}!Can\+Nm.\+h@{Can\+Nm.\+h}}
+\subsubsection[{\texorpdfstring{Can\+Nm\+\_\+\+Repeat\+Message\+Request(\+Network\+Handle\+Type nm\+Channel\+Handle)}{CanNm_RepeatMessageRequest(NetworkHandleType nmChannelHandle)}}]{\setlength{\rightskip}{0pt plus 5cm}Std\+\_\+\+Return\+Type Can\+Nm\+\_\+\+Repeat\+Message\+Request (
+\begin{DoxyParamCaption}
+\item[{Network\+Handle\+Type}]{nm\+Channel\+Handle}
+\end{DoxyParamCaption}
+)}\hypertarget{CanNm_8h_a332dd2231cfbbcaec0241efd4df3177b}{}\label{CanNm_8h_a332dd2231cfbbcaec0241efd4df3177b}
+
+
+Can\+Nm\+\_\+\+Repeat\+Message\+Request \mbox{[}S\+W\+S\+\_\+\+Can\+Nm\+\_\+00221\mbox{]}. 
+
+Set Repeat Message Request Bit for NM P\+D\+Us transmitted next on the bus. \index{Can\+Nm.\+h@{Can\+Nm.\+h}!Can\+Nm\+\_\+\+Request\+Bus\+Synchronization@{Can\+Nm\+\_\+\+Request\+Bus\+Synchronization}}
+\index{Can\+Nm\+\_\+\+Request\+Bus\+Synchronization@{Can\+Nm\+\_\+\+Request\+Bus\+Synchronization}!Can\+Nm.\+h@{Can\+Nm.\+h}}
+\subsubsection[{\texorpdfstring{Can\+Nm\+\_\+\+Request\+Bus\+Synchronization(\+Network\+Handle\+Type nm\+Channel\+Handle)}{CanNm_RequestBusSynchronization(NetworkHandleType nmChannelHandle)}}]{\setlength{\rightskip}{0pt plus 5cm}Std\+\_\+\+Return\+Type Can\+Nm\+\_\+\+Request\+Bus\+Synchronization (
+\begin{DoxyParamCaption}
+\item[{Network\+Handle\+Type}]{nm\+Channel\+Handle}
+\end{DoxyParamCaption}
+)}\hypertarget{CanNm_8h_a9841c84a86fb279928317c760fa9edf9}{}\label{CanNm_8h_a9841c84a86fb279928317c760fa9edf9}
+
+
+Can\+Nm\+\_\+\+Request\+Bus\+Synchronization \mbox{[}S\+W\+S\+\_\+\+Can\+Nm\+\_\+00226\mbox{]}. 
+
+Request bus synchronization. \index{Can\+Nm.\+h@{Can\+Nm.\+h}!Can\+Nm\+\_\+\+Rx\+Indication@{Can\+Nm\+\_\+\+Rx\+Indication}}
+\index{Can\+Nm\+\_\+\+Rx\+Indication@{Can\+Nm\+\_\+\+Rx\+Indication}!Can\+Nm.\+h@{Can\+Nm.\+h}}
+\subsubsection[{\texorpdfstring{Can\+Nm\+\_\+\+Rx\+Indication(\+Pdu\+Id\+Type Rx\+Pdu\+Id, const Pdu\+Info\+Type $\ast$\+Pdu\+Info\+Ptr)}{CanNm_RxIndication(PduIdType RxPduId, const PduInfoType *PduInfoPtr)}}]{\setlength{\rightskip}{0pt plus 5cm}void Can\+Nm\+\_\+\+Rx\+Indication (
+\begin{DoxyParamCaption}
+\item[{Pdu\+Id\+Type}]{Rx\+Pdu\+Id, }
+\item[{const {\bf Pdu\+Info\+Type} $\ast$}]{Pdu\+Info\+Ptr}
+\end{DoxyParamCaption}
+)}\hypertarget{CanNm_8h_aea88ee089c65e433a8dcf84eef3a965b}{}\label{CanNm_8h_aea88ee089c65e433a8dcf84eef3a965b}
+
+
+Can\+Nm\+\_\+\+Tx\+Confirmation \mbox{[}S\+W\+S\+\_\+\+Can\+Nm\+\_\+00231\mbox{]}. 
+
+Indication of a received P\+DU from a lower layer communication interface module. \index{Can\+Nm.\+h@{Can\+Nm.\+h}!Can\+Nm\+\_\+\+Set\+Sleep\+Ready\+Bit@{Can\+Nm\+\_\+\+Set\+Sleep\+Ready\+Bit}}
+\index{Can\+Nm\+\_\+\+Set\+Sleep\+Ready\+Bit@{Can\+Nm\+\_\+\+Set\+Sleep\+Ready\+Bit}!Can\+Nm.\+h@{Can\+Nm.\+h}}
+\subsubsection[{\texorpdfstring{Can\+Nm\+\_\+\+Set\+Sleep\+Ready\+Bit(\+Network\+Handle\+Type nm\+Channel\+Handle, boolean nm\+Sleep\+Ready\+Bit)}{CanNm_SetSleepReadyBit(NetworkHandleType nmChannelHandle, boolean nmSleepReadyBit)}}]{\setlength{\rightskip}{0pt plus 5cm}Std\+\_\+\+Return\+Type Can\+Nm\+\_\+\+Set\+Sleep\+Ready\+Bit (
+\begin{DoxyParamCaption}
+\item[{Network\+Handle\+Type}]{nm\+Channel\+Handle, }
+\item[{boolean}]{nm\+Sleep\+Ready\+Bit}
+\end{DoxyParamCaption}
+)}\hypertarget{CanNm_8h_a194190fadf3bc08ed965009828718c1f}{}\label{CanNm_8h_a194190fadf3bc08ed965009828718c1f}
+
+
+Can\+Nm\+\_\+\+Set\+Sleep\+Ready\+Bit \mbox{[}S\+W\+S\+\_\+\+Can\+Nm\+\_\+00338\mbox{]}. 
+
+Set the NM Coordinator Sleep Ready bit in the Control Bit Vector \index{Can\+Nm.\+h@{Can\+Nm.\+h}!Can\+Nm\+\_\+\+Set\+User\+Data@{Can\+Nm\+\_\+\+Set\+User\+Data}}
+\index{Can\+Nm\+\_\+\+Set\+User\+Data@{Can\+Nm\+\_\+\+Set\+User\+Data}!Can\+Nm.\+h@{Can\+Nm.\+h}}
+\subsubsection[{\texorpdfstring{Can\+Nm\+\_\+\+Set\+User\+Data(\+Network\+Handle\+Type nm\+Channel\+Handle, const uint8 $\ast$nm\+User\+Data\+Ptr)}{CanNm_SetUserData(NetworkHandleType nmChannelHandle, const uint8 *nmUserDataPtr)}}]{\setlength{\rightskip}{0pt plus 5cm}Std\+\_\+\+Return\+Type Can\+Nm\+\_\+\+Set\+User\+Data (
+\begin{DoxyParamCaption}
+\item[{Network\+Handle\+Type}]{nm\+Channel\+Handle, }
+\item[{const uint8 $\ast$}]{nm\+User\+Data\+Ptr}
+\end{DoxyParamCaption}
+)}\hypertarget{CanNm_8h_a14ac586f4f85f3d7db28d0fa9213f1a5}{}\label{CanNm_8h_a14ac586f4f85f3d7db28d0fa9213f1a5}
+
+
+Can\+Nm\+\_\+\+Set\+User\+Data \mbox{[}S\+W\+S\+\_\+\+Can\+Nm\+\_\+00217\mbox{]}. 
+
+Set user data for NM P\+D\+Us transmitted next on the bus. \index{Can\+Nm.\+h@{Can\+Nm.\+h}!Can\+Nm\+\_\+\+Transmit@{Can\+Nm\+\_\+\+Transmit}}
+\index{Can\+Nm\+\_\+\+Transmit@{Can\+Nm\+\_\+\+Transmit}!Can\+Nm.\+h@{Can\+Nm.\+h}}
+\subsubsection[{\texorpdfstring{Can\+Nm\+\_\+\+Transmit(\+Pdu\+Id\+Type Tx\+Pdu\+Id, const Pdu\+Info\+Type $\ast$\+Pdu\+Info\+Ptr)}{CanNm_Transmit(PduIdType TxPduId, const PduInfoType *PduInfoPtr)}}]{\setlength{\rightskip}{0pt plus 5cm}Std\+\_\+\+Return\+Type Can\+Nm\+\_\+\+Transmit (
+\begin{DoxyParamCaption}
+\item[{Pdu\+Id\+Type}]{Tx\+Pdu\+Id, }
+\item[{const {\bf Pdu\+Info\+Type} $\ast$}]{Pdu\+Info\+Ptr}
+\end{DoxyParamCaption}
+)}\hypertarget{CanNm_8h_a274c3732a0a67a3d0753f02823a4a708}{}\label{CanNm_8h_a274c3732a0a67a3d0753f02823a4a708}
+
+
+Can\+Nm\+\_\+\+Transmit \mbox{[}S\+W\+S\+\_\+\+Can\+Nm\+\_\+00331\mbox{]}. 
+
+Requests transmission of a P\+DU. \index{Can\+Nm.\+h@{Can\+Nm.\+h}!Can\+Nm\+\_\+\+Trigger\+Transmit@{Can\+Nm\+\_\+\+Trigger\+Transmit}}
+\index{Can\+Nm\+\_\+\+Trigger\+Transmit@{Can\+Nm\+\_\+\+Trigger\+Transmit}!Can\+Nm.\+h@{Can\+Nm.\+h}}
+\subsubsection[{\texorpdfstring{Can\+Nm\+\_\+\+Trigger\+Transmit(\+Pdu\+Id\+Type Tx\+Pdu\+Id, Pdu\+Info\+Type $\ast$\+Pdu\+Info\+Ptr)}{CanNm_TriggerTransmit(PduIdType TxPduId, PduInfoType *PduInfoPtr)}}]{\setlength{\rightskip}{0pt plus 5cm}Std\+\_\+\+Return\+Type Can\+Nm\+\_\+\+Trigger\+Transmit (
+\begin{DoxyParamCaption}
+\item[{Pdu\+Id\+Type}]{Tx\+Pdu\+Id, }
+\item[{{\bf Pdu\+Info\+Type} $\ast$}]{Pdu\+Info\+Ptr}
+\end{DoxyParamCaption}
+)}\hypertarget{CanNm_8h_aa085375aa3a41d5fe250e5e90b31c021}{}\label{CanNm_8h_aa085375aa3a41d5fe250e5e90b31c021}
+
+
+Can\+Nm\+\_\+\+Trigger\+Transmit \mbox{[}S\+W\+S\+\_\+\+Can\+Nm\+\_\+91001\mbox{]}. 
+
+Within this A\+PI, the upper layer module (called module) shall check whether the available data fits into the buffer size reported by Pdu\+Info\+Ptr-\/$>$Sdu\+Length. If it fits, it shall copy its data into the buffer provided by Pdu\+Info\+Ptr-\/$>$Sdu\+Data\+Ptr and update the length of the actual copied data in Pdu\+Info\+Ptr-\/$>$Sdu\+Length. If not, it returns E\+\_\+\+N\+O\+T\+\_\+\+OK without changing Pdu\+Info\+Ptr. \index{Can\+Nm.\+h@{Can\+Nm.\+h}!Can\+Nm\+\_\+\+Tx\+Confirmation@{Can\+Nm\+\_\+\+Tx\+Confirmation}}
+\index{Can\+Nm\+\_\+\+Tx\+Confirmation@{Can\+Nm\+\_\+\+Tx\+Confirmation}!Can\+Nm.\+h@{Can\+Nm.\+h}}
+\subsubsection[{\texorpdfstring{Can\+Nm\+\_\+\+Tx\+Confirmation(\+Pdu\+Id\+Type Tx\+Pdu\+Id, Std\+\_\+\+Return\+Type result)}{CanNm_TxConfirmation(PduIdType TxPduId, Std_ReturnType result)}}]{\setlength{\rightskip}{0pt plus 5cm}void Can\+Nm\+\_\+\+Tx\+Confirmation (
+\begin{DoxyParamCaption}
+\item[{Pdu\+Id\+Type}]{Tx\+Pdu\+Id, }
+\item[{Std\+\_\+\+Return\+Type}]{result}
+\end{DoxyParamCaption}
+)}\hypertarget{CanNm_8h_a439cb8980084c673243db8059bfa67a4}{}\label{CanNm_8h_a439cb8980084c673243db8059bfa67a4}
+
+
+Can\+Nm\+\_\+\+Tx\+Confirmation \mbox{[}S\+W\+S\+\_\+\+Can\+Nm\+\_\+00228\mbox{]}. 
+
+The lower layer communication interface module confirms the transmission of a P\+DU, or the failure to transmit a P\+DU. 

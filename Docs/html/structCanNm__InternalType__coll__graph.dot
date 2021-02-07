@@ -1,0 +1,10 @@
+digraph "CanNm_InternalType"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="CanNm_InternalType",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" Channels" ,fontname="Helvetica"];
+  Node2 [label="CanNm_Internal_ChannelType",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structCanNm__Internal__ChannelType.html"];
+  Node3 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" RemoteSleepIndTimer\nMessageCycleTimer\nRepeatMessageTimer\nTimeoutTimer\nWaitBusSleepTimer" ,fontname="Helvetica"];
+  Node3 [label="CanNm_Timer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structCanNm__Timer.html"];
+}

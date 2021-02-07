@@ -1,0 +1,9 @@
+CanNm.h:91:15: style: Avoid laying out strings in memory directly before sensitive data [cert-API01-C]
+ float32      TimeoutTime;
+              ^
+CanNm.h:113:13: style: Avoid laying out strings in memory directly before sensitive data [cert-API01-C]
+ boolean    ComControlEnabled;
+            ^
+fff.h:127:18: style: Avoid laying out strings in memory directly before sensitive data [cert-API01-C]
+    unsigned int call_history_idx;
+                 ^
